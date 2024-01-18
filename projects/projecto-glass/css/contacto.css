@@ -44,15 +44,15 @@ fieldset{
     background-position: bottom right;
 }
 form>fieldset:first-child{
-    background-image: url('../_imagens/icone-contato.png');
+    background-image: url('../imagens/icone-contato.png');
 }
 form>fieldset:nth-child(2){
-    background-image: url(../_imagens/icone-endereco.png);
+    background-image: url(../imagens/icone-endereco.png);
 }
 form>fieldset:nth-child(3){
-    background-image: url(../_imagens/icone-mensagem.png);
+    background-image: url(../imagens/icone-mensagem.png);
 }
 form>fieldset:nth-child(4){
-    background-image: url(../_imagens/icone-pagamento.png);
+    background-image: url(../imagens/icone-pagamento.png);
 }
 

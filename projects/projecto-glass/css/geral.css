@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 @font-face{
     font-family: 'destaque';
-    src: url('../_fonts/bubblegum-sans-regular.otf') format('opentype');
+    src: url('../fonts/bubblegum-sans-regular.otf') format('opentype');
 }
 *{
   margin: 0;
@@ -24,7 +24,7 @@ p{
 /*HEADER SETTINGS*/ 
 header#cabecalho{
     position: relative;
-    background-image: url(../_imagens/glass-logo-peq.jpg) ;
+    background-image: url(../imagens/glass-logo-peq.jpg) ;
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 150px 37px;
@@ -96,7 +96,7 @@ nav ul li:not(nav ul li:last-child){
 a#menuButtom{
     height: 50px;
     width: 50px;
-    background-image: url(../_imagens/menu.png);
+    background-image: url(../imagens/menu.png);
     background-size: 40px 40px;
     background-position: center;
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@ main#fotos section ul li figcaption{
 }
 /*Multimedia configuration stylesHeet*/
 main#media div{
-    background-image: url(../_imagens/radio-tv.png);
+    background-image: url(../imagens/radio-tv.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 400px;
