@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+/*For Tablet Devices*/
+@media only screen and (min-width:768px) {
+    div.box{
+        width: 80vw;
+        height: 300px;
+        border-left:none;
+        border-right: none;
+        border-bottom-color: red;
+        border-top-color: rgb(174,0,255) ;
+    }
+    div.box a{
+        display: none;
+    }
+    form label{
+        font-size: 1.3em;
+    }
+    form input[type=text]{
+        height: 30px;
+    }
+
+    /*Alert Config*/
+.alert{
+    width: 400px;
+}
+.alert img{
+    width: 60px;
+    display: block;
+    margin: auto;
+    margin-top: -8%;
+}
+}
+/* For Pc devices*/
+@media only screen and (min-width:992px){
+        div.box{
+            width: 800px;
+            height: 400px;
+        }
+}

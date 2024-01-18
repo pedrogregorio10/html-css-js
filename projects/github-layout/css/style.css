@@ -1,0 +1,270 @@
+@charset 'UTF-8';
+/*660-962 tamanho total
+962-27 parte cima
+cabecalho princila altura 50
+principal largura 603
+aside 252 largura
+SMS 229-103*/
+
+:root{
+    --GeneratorBackgroud:#24292e ;
+    --Bottom-right-back:#0366d6;
+    --PublisBackground:#05264c;
+    --CommitBackground:#155399;
+    --Header-Details-Back:#1d2125;
+    --BackgroundMain-Onclick-Repository:#121417;
+    --lettercolor:#d1d5da;
+    --melhorletter:#c6d5da;
+    --detalhesminimo:#959da5;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  
+  background-image: linear-gradient(to right, rgba(2, 109, 109, 0.651),rgba(6, 53, 122, 0.479));
+  height: 100vh;
+  width: 100%;
+}
+div#interface{
+  background-color: var(--GeneratorBackgroud);
+
+}
+/*FOCUS ON HEADER*/
+div>a#menuicon img{
+  width: 40px;
+}
+/*LOGOMARK GitHub*/
+h1#logo{
+  position: absolute;
+  top: 10px;
+  right: 3px;
+}
+h1#logo img{
+  width: 40px; 
+}
+#cabecalho{
+  position: relative;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+#cabecalho>ul{
+ position: absolute;
+ top:6px;
+ left: 50px;
+ display: none;
+}
+#cabecalho ul li{
+  list-style-type: none;
+  color:var(--lettercolor);
+  padding: 5px;
+  margin-bottom:1px;
+}
+#cabecalho ul li:hover{
+  background-color: #959da51f;
+}
+#cabecalho img#render{
+  position: absolute;
+  top: 0;
+  right:0;
+  display: none;
+}
+/*Main header part*/
+#mheader {
+ background-color:var(--Header-Details-Back);
+ border-bottom:2px solid rgb(20, 20, 20) ;
+}
+header#mheader>nav li{
+  list-style-type: none;
+  border-bottom: 0.1px solid rgb(20, 20,20);
+  padding: 10px;
+}
+#mheader ul li:hover{
+  background-color: #959da51f;
+}
+#mheader p.current{
+  color: var(--detalhesminimo);
+  font-size: 0.8em;
+}
+#mheader p.bot{
+  padding-bottom: 5px;
+}
+#mheader p.ctop{
+  padding-top: 5px;
+}
+#mheader p.normal{
+  color: var(--lettercolor);
+  font-size: 0.9em;
+}
+/*Principal parts Article*/
+article#principal{
+  padding: 30px 20px 0px 20px;
+  padding-bottom:50px ;
+}
+article#principal>section#delimitar{
+  position: relative;
+}
+article#principal .build{
+  position: absolute;
+  top: 4px;
+  right: 10px;
+}
+article#principal h2{
+  font-size: 2em;
+  color: var(--lettercolor);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  margin-bottom:7px ;
+}
+article#principal .p0{
+  color: var(--lettercolor);
+  font-size: 0.9em;
+}
+article#principal .divtop{
+  margin-top: 15px;
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 5px;
+}
+article#principal .divtop p{
+  margin-bottom: 5px;
+}
+article#principal .divtop .p1{
+  color: var(--lettercolor);
+  font-size: 1em;
+ 
+}
+article#principal .divtop .p2{
+  color: var(--lettercolor);
+  font-size: 0.8em;
+}
+article#principal .divtop .p3{
+  color:var(--detalhesminimo);
+  font-size: 0.9em;
+}
+article#principal .divtop .p3 span{
+  background-color: #1d2125a4;
+  padding: 3px;
+  border-radius: 10px;
+  border: 0.1px solid rgb(20, 20, 20);
+}
+article#principal .divtop .botao{
+  padding: 7px 0px;
+}
+article#principal .divtop .botao>input, #undo{
+  border-radius: 5px;
+  border: 0.1px solid rgb(20, 20, 20);
+  padding: 4px;
+  background-color:#959da51f;
+  color: var(--lettercolor);
+}
+article#principal .div1 .botao>input{
+  background-color: var(--Bottom-right-back);
+}
+article#principal .div1 .botao>input:hover{
+  background-color: #165daf;
+}
+article#principal .div2 .botao>input:hover{
+  border: 0.1px solid var(--lettercolor);
+}
+article#principal .div1{
+  border-color: var(--Bottom-right-back);
+  background-color:#042244b4;
+}
+article#principal .div2 .div21{
+  border-bottom: 1px solid rgb(26, 25, 25);
+}
+article#principal .div2 .div21 a{
+  text-decoration: none;
+  color: #0571ec;
+}
+article#principal .div2 .div21 a:hover{
+  text-decoration: underline;
+}
+article#principal .divdentro{
+  padding: 20px;
+}
+/*Aside content*/
+table{
+  border-collapse: collapse;
+  width: 100%;
+  border-top: 1px solid rgb(20, 20, 20);
+}
+tr td.dir{
+  border-right: 1px solid rgb(20, 20, 20);
+}
+tr td{
+  text-align: center;
+  color: var(--lettercolor);
+  font-size: 0.8em;
+  padding: 7px;
+}
+tr td:hover{
+  background-color: #959da51f;
+}
+
+section#aside .chec{
+    padding: 4px;
+    text-align: center;
+    border-top: 1px solid rgb(20, 20, 20);
+    border-bottom: 1px solid rgb(20, 20, 20);
+    font-size: 0.8em;
+    color: var(--lettercolor);
+    margin-bottom: 50px;
+    background-color: #959da51f;
+}
+section#aside .chec input{
+  position: absolute;
+  left: 10px;
+}
+/*Form part*/
+section#aside form{
+  background-color: #959da51f;
+}
+section#aside form div{
+    padding: 5px 10px;
+}
+section#aside .sum>input,.textarea>textarea, #commitButtom{
+  border-radius: 7px;
+  background-color: var(--Header-Details-Back);
+  border: 0.1px solid rgb(20, 20, 20);
+  padding: 5px;
+}
+section#aside .textarea textarea{
+    width: 229px;
+    height:103px;   
+}
+form #commitButtom{
+  background-color: var(--CommitBackground);
+  width: 229px;
+  color: var(--detalhesminimo);
+  border: none;
+  margin-bottom: 10px;
+}
+section#aside .textarea>textarea:focus-within{
+  background-color: rebeccapurple;
+
+}
+section#aside form .sum>input:focus-within{
+  background-color: violet;
+}
+form .lastp{
+  border-top: 0.1px solid rgb(20, 20, 20);
+  color: var(--detalhesminimo);
+  font-size: 0.8em;
+  position: relative;
+}
+form>.lastp>#undo{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: none;
+  font-size: 0.9em;
+}
+form>.lastp p{
+  padding: 1px;
+}
+form>.lastp .spans{
+  color: var(--lettercolor);
+}

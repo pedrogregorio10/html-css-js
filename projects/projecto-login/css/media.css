@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+@media only screen and (min-width:768px){
+    body{
+        background-image: linear-gradient(to right, darkslategray, rgb(32, 214, 159));
+    }
+    section{
+      width: 80vw;
+      height: 320px;
+    }
+    header{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    article{
+        float: right;
+        width: 70%;
+    }
+    
+}
+@media only screen and (min-width:992px){
+    body{
+        background-image: linear-gradient(to bottom, rgb(58, 201, 129), rgb(33, 129, 153));
+    }
+    section{
+        width: 992px;
+        height: 350px;
+    }
+    header{
+        float: right;
+    }
+    article{
+        float: left;
+    }
+
+}

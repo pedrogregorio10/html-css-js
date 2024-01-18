@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+/*660-962 tamanho total
+962-27 parte cima
+cabecalho princila altura 50
+principal largura 603
+aside 252 largura
+SMS 229-103*/
+
+/*Largue Devices*/
+@media only screen and (min-width:992px){
+    div#interface{
+        box-shadow: -2px 2px 10px 3px #1e1d1db5;
+        width: 962px;
+        height: 660px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    /*CABECALHO PRINCIPAL*/
+    header#cabecalho{
+       padding: 0;
+       height: 26px;
+       
+    }
+    header#cabecalho h1#logo{
+     left: 8px;
+     top: -13px;
+    }
+    header#cabecalho h1#logo img{
+        width: 17px;
+    }
+    header#cabecalho div a#menuicon{
+        display: none;
+    }
+    header#cabecalho ul{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 42px;
+    }
+    header#cabecalho ul li{
+        display: inline-block;
+        font-size: 0.8em;
+    }
+    header#cabecalho img#render{
+        display: block;
+    }
+    /*Cabecalho mheader of tag main*/
+    header#mheader{
+        height: 51px;
+        overflow: hidden;
+
+    }
+    header#mheader nav li{
+        display: inline-block;
+        padding: 5px;
+        border-right: 0.1px solid rgb(20, 20,20);
+        border-bottom: none;
+        width: 242px;
+        height: 50px;
+    }
+    header#mheader nav li.wid{
+        width: 215px;
+    }
+    header#mheader p.normal{
+        font-size: 0.8em;
+    }
+    header#mheader p.current{
+        font-size: 0.7em;
+    }
+    /*Principal article*/
+    article#principal{
+        width: 640px;
+        float: right;
+    }
+    article#principal>section#delimitar{
+        width: 600px;
+        
+    }
+    article#principal .p0{
+        font-size: 0.8em;
+        width: 524px;
+    }
+    article#principal .divtop .p1{
+        font-size: 0.8em;
+    }
+    article#principal .divtop .p2{
+        font-size: 0.75em;
+    }
+    article#principal .divtop .p3{
+        font-size: 0.73em;
+    }
+    article#principal .divtop .botao>input{
+        position: absolute;
+        right: 20px;
+    }
+    /*Aside left part form*/
+    table{
+        border-top: none;
+    }
+    section#aside{
+        width: 252px;
+        float: left;
+        border-right: 1px solid rgb(20, 20,20);
+        height: 583px;
+        position: relative;
+        overflow: hidden;
+    }
+    section#aside>form{
+        position: absolute;
+        bottom: 0;
+    }
+
+/*660-962 tamanho total
+962-27 parte cima
+cabecalho princila altura 50
+principal largura 603
+aside 252 largura
+SMS 229-103*/
+
+}

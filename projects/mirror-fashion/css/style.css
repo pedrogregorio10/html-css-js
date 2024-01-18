@@ -1,0 +1,269 @@
+@charset 'UTF-8';
+@font-face{
+    font-family: destaque;
+    src: url(../fonts/Absorbia.otf) format(opentype);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    transition: width 0.6s ease-in-out;
+}
+/*header configuration*/
+header>h1,header>nav{
+        text-align: center;
+}
+header ul li{
+    display: inline-block;
+    padding-left: 10px;
+
+}
+header ul li a{
+    color: rgb(13, 129, 165);
+}
+header p.sacola{
+    display: none;
+}
+/*Main Busca section and Departamento Geral*/
+.busca, .departamento{
+    background-color: #dcdcdc;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.busca h2, .busca form, .departamento h2{
+    margin: 5px;
+}
+.busca h2, .departamento h2{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.busca input[type='search']{
+    width: 170px;
+    border-radius: 10px;
+    margin-bottom: 10px;  
+}
+.busca form button{
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+    width: 30px;
+    height: 20px;
+    text-indent: -999px;
+    background-color:#dcdcdc;
+}
+.departamento li{
+    list-style-type: none;
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+.departamento li a{
+    text-decoration: none;
+    color: #333333;
+}
+/*Destaque article principal*/
+.destaque figure img{
+    max-width:100%;
+}
+/*Artigo de produtos*/
+section.artigo{
+    margin: 20px 0;
+    box-shadow: -1px 2px 4px rgba(66, 66, 66, 0.452);
+}
+section.artigo>h2{
+    font-family: destaque;  
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+section.artigo>h2::before{
+    content: '#';
+}
+section.artigo ul{
+    text-align: center;
+}
+section.artigo li{
+        width: 30%;
+        display: inline-block;
+        margin-right: 1%;
+}
+section.artigo li img{
+    width: 100%;
+}
+section.artigo1{
+    background-image: linear-gradient(to right,#f4c1c0, #f3d5d5);
+}
+section.artigo2{
+    background-image: linear-gradient(to right,#c0c0f4,#c6c7f3);
+}
+/*Footer configuration*/
+footer{
+    background-image: url(../img/fundo-rodape.png);
+    padding: 20px 0px;
+}
+footer .container{
+    position: relative;
+}
+footer ul a{
+    display:block;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 32px;
+    height: 32px;
+}
+footer ul a[href='facebook.com']{
+    background-image: url(../img/facebook.png);
+}
+footer ul a[href='twitter.com']{
+    background-image: url(../img/twitter.png);
+}
+footer ul a[href='gmail.com']{
+    background-image: url(../img/googleplus.png);
+}
+footer div ul{
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+footer div li{
+    float: left;
+    margin-left: 20px;
+    list-style-type: none;
+}
+footer ul li:last-child{
+    margin-right: 10px;
+}
+/*Estilizacao para funcao ver mais e ver menos Produtos da Home*/
+.artigo li:nth-child(n+7){
+    display: none;
+    transition:all 3s;
+}
+.show li:nth-child(n+7){ 
+  display: inline-block;
+  transition:all 3s;
+}
+
+.inicio{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.inicio::after{
+    display: block;
+    content: ''; 
+    border-bottom: 20px solid rgb(27, 27, 27);
+    border-left:10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.ver-mais{
+    margin: 15px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: #353564;
+    background-image:linear-gradient(to right,#f4c1c0,#c0c0f4);
+}
+/*Media queries*/
+@media only screen and (min-width:576px){
+            .container{
+                width: 510px;
+                padding: 0 15px;
+                margin: auto;
+            }
+            header nav li{
+            padding-left: 0px;
+            }
+            body{
+                background-color: #e9e9e986;
+            }
+            header, main>.container{
+                background-color: white;
+            }
+            
+            .info{
+                overflow: hidden;
+               }
+}
+@media	(min-width:	768px)	{
+    .container{
+        width: 690px;
+    }
+    header .container{
+        position: relative;
+    }
+    header .container nav{
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+    }
+        header>h1{
+            text-align: left;
+            margin-left: 10px;
+        }
+       header p.sacola{
+            display: block;
+            width: 138px;
+            background-image: url(../img/sacola.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            padding: 10px;
+            padding-right: 30px;
+        }
+       .info{
+        overflow: hidden;
+       }
+        .lateral-content{
+            float: left;
+            width: 32%;
+            margin-right: 1%;
+        }
+      
+        section.artigo li{
+            width: 15%;
+        }
+        .destaque{
+            width: 67%;
+            float: right;     
+        }
+        .destaque figure img{
+            width: 100%;
+        }
+        section.artigo1{ 
+            clear:both;
+        }
+}
+@media only screen and (min-width:992px){   
+            .container{
+                width: 930px;
+            }
+            section.artigo li{
+                width: 30%;
+            }
+            section.artigo{
+                width: 48%;              
+            }
+            section.artigo1{
+                float: left;
+                margin-left: 1%;
+            }
+            section.artigo2{
+                float: right;
+                margin-right: 1%;
+            }
+            footer{
+                clear: both;
+            }
+}
+@media only screen and (min-width:1200px) {
+        .container{
+            width: 1110px;
+        }
+      
+      
+}

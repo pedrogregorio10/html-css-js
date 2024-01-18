@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <div ><a id="menuicon" href="#" onclick="menuShow()" ><img src="imagens/menu.png" alt=""></a></div>
+            <h1 id="logo"><img src="imagens/logo-github.png" alt="Imagem logo GitHub"></h1>
+            <ul id="menu">
+                <li>File</li>
+                <li>Edit</li>
+                <li>View</li>
+                <li>Repository</li>
+                <li>Branch</li>
+                <li>Help</li>
+            </ul>
+            <img id="render" src="imagens/renderizar.jpg" alt="Renderizar janela">
+        </header>
+        <main>
+            <header id="mheader">
+                <nav>
+                    <ul>
+                        <li>
+                            <p class="current bot">Current repository</p>
+                            <p class="normal">GitHub Layout Clonned</p>
+                        </li>
+
+                        <li class="wid"><p class="current bot">Current branch</p>
+                        <p class="normal">main</p></li>
+
+                        <li class="wid">
+                            <p class="normal">Publish repository</p>
+                            <p class="current ctop">Publish this repository to GitHub</p>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <article id="principal">
+                <section id="delimitar">
+                    <div class="build"><img src="imagens/build.jpg" alt="imagem de contrucao"></div>
+                    <h2>No local Changes</h2>
+                    <p class="p0">There are no uncommitted changes in this repository, Here are some friendly suggestions for what to do next</p>
+                    <div class="divtop div1 divdentro" >
+                        <div>
+                            <p class="p1">Publish your repository to GitHub</p>
+                            <p class="p2">
+                                This repository is currently only available on your local machine. By publishing it on GitHub you can share it, and collaborate with others.
+                            </p>
+                        </div>
+                        <div class="botao"><input type="submit" value="Publish repository"></div>
+                        <p class="p3">Always avalable in the toolbar for local repository or <span>Ctrl</span> <span>P</span></p>
+                    </div>
+                    
+                        <div class="divtop div2">
+                        <div class="div21 divdentro">
+                            <p class="p1">Open the repository in your external editor</p>
+                            <p class="p2">your editor in <a href="#">Options</a></p>
+                            <div class="botao"><input type="submit" value="Open in visual Studio Code"></div>
+                            <p class="p3">Repository menu  or <span>Ctrl</span> <span>Shift</span> <span>A</span></p>
+                        </div>
+                        <div class="divdentro">
+                            <p class="p1">View the files of your repository in Explorer</p>
+                            <div class="botao"><input type="submit" value="Show in Explorer "></div>
+                            <p class="p3">Repository menu  or <span>Ctrl</span> <span>Shift</span> <span>A</span></p>
+                        </div>
+                                   </div>
+                </section>
+            </article>
+
+            <section id="aside">
+                <table>
+                    <tr>               
+                        <td class="dir">Changes</td>
+                        <td>History</td>       
+                    </tr>
+                </table>
+                <div class="chec">
+                    <input type="checkbox" name="nchange" id="ichange" checked
+                    ><label for="ichange">0 changed files</label>
+                </div>
+                <form action="" autocomplete="off" method="get">
+                    <div class="sum">
+                        <input type="text" name="n" id="icomit" placeholder="Summary (required)">
+                    </div>
+                    <div class="textarea">
+                        <textarea name="nsms" id="isms" cols="30" rows="10" placeholder="Description"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Commit to main" id="commitButtom">
+                    </div>
+                    <div class="lastp">
+                        <P>Committer jan 27,2023</P>
+                        <p class="spans">Initial commit</p>
+                        <input type="submit" value="Undo" id="undo">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script>
+        function menuShow(){
+            if(menu.style.display=='block'){
+                menu.style.display='none';
+            }
+            else{
+                menu.style.display='block'
+            }
+            
+        }
+    </script>
+ 
+</body>
+</html>

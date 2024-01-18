@@ -1,0 +1,114 @@
+@charset 'UTF-8';
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: darkslategrey;
+}
+main{
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+}
+section{
+    background-color: white;
+    width:250px;
+    height: 520px;
+    margin: auto;
+    border-radius:20px ;
+    overflow: hidden;
+    position: absolute;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    
+}
+header h1,h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+header h2{
+    font-size: 0.8em;
+}
+header{
+    height: 200px;
+    background-image: url(../imagens/wallpaper002.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+article h1{
+    text-align: center;  
+}
+article p{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+article{
+    padding: 5px;
+}
+
+form label{
+    display: inline-block;
+   background-image: url(../imagens/favicon.ico);
+   background-repeat: no-repeat;
+   background-size: 20px 20px;
+   width: 20px;
+   height: 20px; 
+} 
+div{
+    background-color: darkslategrey;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 40px;
+}
+form input{
+    width:calc(100% - 40px);  
+    border: none;
+    background-color: antiquewhite;
+    height: 80%;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+form input[type=submit]{
+    width: 100%;
+    display: block;
+    background-color: darkseagreen;
+    margin-top: 5px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+    margin-bottom:10px ;
+}
+form input[type=submit]:hover{
+    background-color: darkslategrey;
+}
+form a{
+    display: block;
+  text-decoration: none;
+  border:1px solid darkslategray;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  color:darkslategrey ;
+}
+form a:hover{
+    color: white;
+    background-color: darkslategray;
+    transition: 0.5s;
+}

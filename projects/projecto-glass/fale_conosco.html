@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="_css/geral.css" media="all">
+   <link rel="stylesheet" href="_css/contacto.css">
+</head>
+<body>
+    <div id="interface">
+          
+            <header id="cabecalho">
+                <div class="container">
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                    
+                    <div class="divMenuButtom"><a href="#" id="menuButtom" class="show">Menu</a>
+                        <div id="outMenuButtom" class="outMenuButtom hide">
+                            <span class="linha1"></span>
+                            <span class="linha2"></span>
+                        </div></div>
+                    <nav id="menu" class="hide">
+                        <ul >
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="specs.html">Especificações</a></li>
+                            <li><a href="fotos.html">Fotos </a></li>
+                            <li><a href="multimidia.html">Multimídia</a></li>
+                            <li><a href="fale_conosco.html">Fale conosco</a></li>
+                        </ul>
+                    </nav>
+                    <div id="ilust">
+                        <img src="_imagens/contato.png" alt="ilustração da navBar do inicio da pagina glass">
+                    </div>
+                </div>
+            </header>
+
+            <main >             
+                    <header>
+                        <h3>Tecnologia > Inovações</h3>
+                        <h1>Formulario de Contato</h1>
+                        <h2>Gustavo Guanabara</h2>
+                        <h4>Atualizado em 23/Abril/2013</h4>
+                    </header>
+                    <article>
+                        <form action="contato.js" method="post" autocomplete="on">
+                            <fieldset>
+                                <legend>Identificação do usuário</legend>
+                                <div>
+                                    <label for="iname">Nome:</label>
+                                    <input type="text" name="name" id="iname" placeholder="Nome Completo" >
+                                </div>
+
+                                <div>
+                                    <label for="isenha">Senha:</label>
+                                    <input type="password" name="senha" id="isenha" placeholder="8 dígitos" minlength="8" size="8">
+                                </div>
+                
+                                <div id="em">
+                                    <label for="iemail">E-mail:</label>
+                                    <input type="email" name="email" id="iemail" placeholder="Separe por vírgulas">
+                                </div>
+
+                                <fieldset>
+                                    <legend>Sexo</legend>
+                                    <input type="radio" name="sexo" id="imas"><label for="imas">Maculino</label><br>
+                                    <input type="radio" name="sexo" id="ifem"><label for="ifem">Femenino</label>
+                                </fieldset>
+                                <div>
+                                    <label for="idata">Data de Nascimento</label>
+                                    <input type="date" name="data" id="idata">
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Endereço</legend>
+                                <div>
+                                    <label for="ilog">Logradouro:</label>
+                                    <input type="text" name="log" id="ilog" placeholder="Rua, Av, Trav, ...">
+
+                                    <label for="inum">Numero:</label>
+                                    <input type="number" name="num" id="inum" min="10" max="20">
+                                </div>
+                                <div>
+                                    <label for="iestado">Estado:</label>
+                                    <select name="estado" id="iestado">
+
+                                        <optgroup label="Região do Sul">
+                                            <option value="Bg">Benguela</option>
+                                            <option value="BE">Bie</option>
+                                            <option value="CD">Cuango</option> 
+                                            <option value="CC">Cubango</option>
+                                            <option value="Ks">Kwanza Sul</option>
+                                            <option value="Ls">Lunda Sul</option> 
+                                            <option value="MJ">Malanje</option>
+                                            <option value="Ui">Uije</option>
+                                            <option value="Zr">Zaire</option>
+                                        </optgroup>
+                                        <optgroup label="Região do Norte">
+                                            <option value="BE">Bengo</option>
+                                            <option value="CB">Cabinda</option> 
+                                            <option value="Cn">Cunene</option>
+                                            <option value="kZ">Kwanza Norte</option>
+                                            <option value="LD">Luanda</option>
+                                            <option value="LB">Lubango</option>
+                                            <option value="Ln">Lunda Norte</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="icidade">Cidade:</label>
+                                    <input type="text" name="cidade" id="icidade" placeholder="Sua Cidade">
+        
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Mensagem</legend>
+
+                                <div>
+                                    <label for="igrau">Grau de Urgência:</label>
+                                    <input type="range" name="grau" id="igrau">
+                                </div>
+
+                                <div>
+                                    <label for="isms">Mensagem:</label><br>
+                                    <textarea name="sms" id="isms" cols="55" rows="6" placeholder="Sua mensagem..."></textarea>
+                                    
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Quero um Google Glass</legend>
+                                <div>
+                                    <input type="checkbox" name="adq" id="iadq" checked>
+                                    <label for="iadq">Gostaria de adquirir um Google Glass &COPY; quando tiver disponível</label>
+                                </div>
+
+                                <div>
+                                    <label for="icor">Cor:</label>
+                                    <input type="color" name="cor" id="icor" value="#0000ff">
+                                </div>
+
+                                <div>
+                                    <label for="iqtd">Quantidade:</label>
+                                    <input type="number" name="qtd" id="iqtd" min="0" max="10" oninput="ipreco.innerHTML=Number(iqtd.value*200)">
+                                </div>
+
+                                <div>
+                                    <label for="ipreco">Preço Total: R$</label>
+                                    <output id="ipreco" > Total a pagar</output>
+                                </div>
+                            </fieldset>
+                            <button type="submit"><img src="_imagens/botao-enviar.png" alt=""></button>
+                        </form>
+                    </article>
+            </main>
+                 
+            <footer>
+                <p>&copy; Copyright 2013 - by <a href="#">Gustavo Guanabara</a></p>
+                <p><a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+            </footer>
+    </div>
+    <script src="javascript/menu.js"></script>
+</body>
+</html>

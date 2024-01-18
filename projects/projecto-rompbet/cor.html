@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label::after{
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        input{
+       
+        }
+        input:checked+label::after	{
+					background-color: blue;
+	}
+    .cores label::after	{
+					box-sizing:	border-box;
+	}
+
+
+    </style>
+</head>
+<body>
+    <div	class="produto">
+        <h1>Fuzzy	Cardigan</h1>
+        <p>por	apenas	R$	129,90</p>
+        <form>
+                <fieldset	class="cores">
+                        <legend>Escolha	a	cor:</legend>
+                        <input	type="radio" name="cor" value="verde" id="verde">
+                        <label	for="verde">
+                                        <img	src="img/produtos/foto1-verde.png" alt="Produto	na	cor	verde">
+                        </label>
+                        <input	type="radio" name="cor" value="rosa" id="rosa">
+                        <label	for="rosa">
+                                <img	src="img/produtos/foto1-rosa.png" alt="Produto	na	cor	rosa">
+                        </label>
+                        <input	type="radio" name="cor" value="azul" id="azul">
+                        <label	for="azul">
+                                        <img	src="img/produtos/foto1-azul.png" alt="Produto	na	cor	azul">
+                        </label>
+                </fieldset>
+                <button	class="comprar">Comprar</button>
+        </form>
+</div>
+</body>
+</html>

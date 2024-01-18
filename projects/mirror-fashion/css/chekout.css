@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+.form-control:invalid{
+    border: 1px	solid #CC0000;
+    
+}
+form button[type='submit']{
+float: right;
+
+}

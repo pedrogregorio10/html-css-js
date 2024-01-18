@@ -1,0 +1,106 @@
+@charset 'UTF-8';
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(20, 20, 24);
+}
+div.box{
+    border-radius: 15px ;
+    border: 1px solid rgb(20,20,24);
+    border-left-color:red ;
+    border-right-color: rgb(174, 0, 255);
+    width: 90%;
+    height: 90vh;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition:0.3s;
+    transition-timing-function: ease-in-out;
+    text-align: center;
+}
+div.box>a{
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-image: url('../img/menu.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    right: 10px;
+    text-indent: 999px;
+}
+div.box>h1{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 55px 0px;
+    font-size: 1.5em;
+}
+div.box label{
+    font-size: 1.08em;
+    color: aliceblue;
+    padding: 2px;
+}
+form{
+    text-align: center;
+}
+label+div{
+padding: 20px 0px;
+}
+div.box input{
+    width: 90%;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+div.box button#saber{
+    color: rgb(31, 28, 28);
+    background:linear-gradient(to bottom, rgba(137, 43, 226, 0.774),rgb(180, 20, 255));
+}
+button{ 
+    font-size: 1.5em;
+    width: 50%;
+    height: 40px;border-radius: 5px;
+    border: none;  
+    outline: none;
+    cursor: pointer;
+}
+/*Alert Config*/
+.alert{
+    background-color: aliceblue;
+    border-radius:10px ;
+    box-shadow: -2px 1px 2px rgb(34, 33, 33);
+    width: 90%;
+    height: 150px;
+    visibility: hidden;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.to{
+visibility: visible;
+}
+.alert img{
+    width: 60px;
+    display: block;
+    margin: auto;
+    margin-top: -10%;
+}
+.alert button{
+    position: absolute;
+    background-color: rgb(100, 231, 88);
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.alert h4{
+    padding: 10px;
+}

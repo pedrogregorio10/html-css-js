@@ -1,0 +1,203 @@
+@charset 'UTF-8';
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    background-image:linear-gradient(to right, rgb(43, 26, 26), rgb(180, 35, 35));
+}
+/*Cabecalho configuration*/
+header#cabecalho{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif; 
+    height: 60px; 
+    background-color: rgb(12, 12, 12);
+    border-bottom: 1px solid rgb(58, 58, 58);
+
+}
+header#cabecalho h1{
+    color: rgb(194, 6, 6);
+    font-size:1em;
+    padding-top:15px ;
+}
+header#cabecalho h1 span{
+    font-size: 0.7em;
+    color: white;
+}
+header#cabecalho img{
+    width: 30px;     
+}
+header#cabecalho>a#menu{   
+    background-image: url(../imagens/menu.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    text-decoration: none;
+    height: 55px;
+    width: 55px;
+    margin: 10px 0 0 5px; 
+    float: left; 
+    text-indent: -999PX;  
+}
+header#cabecalho ul{
+    width: 80%;
+    height: 93%; 
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    background-color: rgb(58, 58, 58);
+    display: none;
+}
+header#cabecalho:hover ul{
+    display: block;
+}
+header#cabecalho ul li{
+    padding: 10px;
+}
+header#cabecalho ul li:not(ul li:last-child){
+    border-bottom: 1px solid black;
+}
+header#cabecalho ul li a{
+    text-decoration: none;
+    color: rgb(235, 233, 233);
+    display: block;
+}
+header#cabecalho ul li:last-child{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+header#cabecalho ul li:hover{
+    background-color: rgba(77, 76, 76, 0.493);
+}
+header#cabecalho div a, main marquee a{ 
+    display: inline-block;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 15px; 
+    text-decoration: none;
+    padding: 5px;
+}
+header#cabecalho div a:first-child, main marquee a{
+    color: black;
+    background-color: yellow;
+    padding: 7px;
+    font-weight: bolder;
+}
+header#cabecalho div a:last-child{
+    color: red;
+    border: 2px solid red;
+}
+header#cabecalho div{
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 5px;
+}
+/*Main, article of bets,Publishing Bloguer Bets*/
+main{
+    background-color:  rgb(0, 0, 0);
+    color: rgb(226, 225, 225);
+    padding-bottom: 50px;
+}
+main>h1,main form>h2{
+    color: rgb(180, 7, 7);
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+main marquee img{
+    width: 400px;
+}
+main marquee{
+    position: relative;
+}
+main marquee a{
+    position: absolute;
+    right:0;
+    bottom: 10px;
+}
+fieldset{
+    border: none;
+    padding: 20px;
+    background-color:rgb(58, 58, 58);
+    position: relative;
+}
+table{
+    width: 100%;
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid rgb(75, 75, 74); 
+}
+tr:last-child td:last-child{
+    padding: 5px;  
+    border-bottom: 1px solid rgb(165, 164, 164);
+}
+th{
+    text-align: left;
+    font-weight: normal;
+    padding: 5px;
+}
+table th~td{
+    color: rgb(235, 220, 13);
+    background-color:  rgba(58, 58, 58, 0.568);
+    text-align: center;
+}
+table tr:last-child td{
+    color: rgb(182, 179, 179);
+}
+/*Cabecalho or Header Bottom*/
+main+header{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    height: 50px;
+  
+}
+main+header ul{
+    text-align: center;
+    margin: auto;
+}
+main+header li{
+  display: inline-block; 
+  padding: 15px;
+ 
+}
+main+header li:first-child{
+    float: left;
+}
+main+header li:last-child{
+    float: right;   
+}
+main+header a, td a{
+    text-decoration: none;
+    color: rgb(231, 227, 227);
+}
+aside{
+    position: relative;
+    width: 390px;
+    margin: auto;
+}
+legend{
+    position:	absolute;
+    top: 0;
+    left: 5px;
+}
+table tr td input{
+    display: none;
+}
+table tr td label{
+    display:block;
+    height: 100%;
+    padding: 10px;
+}
+table tr td input:checked+label{
+    background-color: tomato;
+    color: rgb(245, 245, 245);
+}

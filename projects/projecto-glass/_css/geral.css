@@ -1,0 +1,423 @@
+@charset 'UTF-8';
+@font-face{
+    font-family: 'destaque';
+    src: url('../_fonts/bubblegum-sans-regular.otf') format('opentype');
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --normal:#dddddd;
+    --medio:#cecece;
+    --forte0:#888888;
+    --forte1:#606060;
+}
+.container{
+    transition: width 0.5s;
+}
+p{
+    text-align: justify;
+    padding: 10px;
+}
+/*HEADER SETTINGS*/ 
+header#cabecalho{
+    position: relative;
+    background-image: url(../_imagens/glass-logo-peq.jpg) ;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px 37px;
+    background-position-y: 6px;
+    border-bottom: 1px solid black;
+    padding-top:60px;
+    padding-bottom: 35px;
+
+}
+header#cabecalho h1{
+    font-family: destaque;
+    color: var(--forte1);
+    font-size:3em ;
+    padding: 0 10px;
+}
+header#cabecalho h2{
+    color: var(--forte0);
+    font-size: 1em;
+    padding:0 10px;
+}
+/*Imagens de cada navbar mudando*/
+nav~div{
+    position: relative;
+    text-align:right; 
+}
+nav~div>img{
+    position: absolute;
+    top:0;
+    right: 5px;
+    width: 90px; 
+}
+/*NAVBAR NAVEGATION*/
+header#cabecalho nav{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 500vh;
+    background-color: #1a1616da;
+    backdrop-filter: blur(4px);   
+}
+header nav ul li{
+   list-style-type: none;
+   line-height: 3em;
+   padding: 5px;
+}
+
+header nav ul li a{
+    display: block;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+header nav ul li:hover{
+    background-color: #1a1616da;
+    transition: 0.6s;
+}
+
+nav ul li:not(nav ul li:last-child){
+    border-bottom: 1px solid rgb(133, 133, 133);
+}
+/*Menu mobile buttom*/
+.divMenuButtom{
+    position: absolute;
+    top: 0;  
+    background-color: #b36d6d60;
+    width: 100%;
+    box-shadow: -1px 0px 5px black;
+}
+a#menuButtom{
+    height: 50px;
+    width: 50px;
+    background-image: url(../_imagens/menu.png);
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9990px;
+}
+/*OutButtomMenu X*/
+.outMenuButtom{
+    border: 2px solid red;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+.linha2{
+    display: block;
+    width: 38px;
+    height: 3px;
+    background-color: rgb(255, 0, 0);    
+    transform:translateY(18px) rotate(-45deg);
+}
+.linha1{       
+    display: block;
+    width: 38px;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    transform:translateY(18px) rotate(45deg);
+}
+/*Hide and SHOW ELEMENT*/
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+/*Header main*/
+
+main header h1{
+    color: var(--forte1);
+    font-family: destaque;
+    padding:7px;
+    text-shadow: -1px 1px 2px rgb(114, 114, 114);
+}
+main header h3,h2{
+    color: var(--forte0);
+    padding: 5px 10px;
+}
+main header h2{
+  font-size: 1em;
+}
+main header h4{
+    font-size: 0.9em;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+
+/*Main pages miolo article*/
+main article h3{
+    background-image: linear-gradient(to right,var(--normal),white);
+    padding: 4px;
+    color: var(--forte1);
+    margin: 10px 0;
+}
+/*Imagens Glass configuration*/
+main#main figure figcaption{
+    background-color: #dddddd28;
+    font-size: 0.8em;
+}
+main#main figure img{
+    width: 100%;
+}
+/*TABLE ROWS AND SPAN*/
+table{
+ border-collapse:collapse ;
+ margin: auto;
+}
+table>caption{ 
+    position: relative;
+    color: var(--forte0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size:1.2em ;
+   text-align: center;
+}
+table>caption>span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.5em;
+}
+table tr th{
+    background-color: var(--forte1);
+    color: white;
+    padding: 6px;
+    text-align: right;  
+}
+table tr td{
+    border: 1px solid var(--forte1);
+    background-color: var(--normal);
+    padding: 5px;
+}
+
+/*Main Conteudo specification side*/
+main#conteudo img{
+   width: 100%;
+}
+main#conteudo div{
+    display: inline-block;
+}
+fieldset textarea[name="sms"]{
+    width: 100%;
+}
+/*video responsive*/
+div>video{
+    width: 100%;
+}
+
+
+/*ASIDE PARTS*/
+aside{
+    background-color: var(--normal);
+    padding: 10px;
+    box-shadow: -2px 2px 3px rgb(161, 161, 161);
+}
+aside h1{
+    font-family: destaque;
+    color: var(--forte1);
+    padding: 10px 0;
+}
+aside h2{
+    background-color: var(--forte1);
+    color: white;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+}
+aside p{
+    padding: 10px 0;
+}
+aside div video{
+    padding-bottom: 10px;
+}
+
+
+/*FOOTER PARTS AND LAST MUNDO ENCANTADO*/
+footer{
+    border-top: 1px solid black;
+}
+footer p{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: var(--forte0);
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer p:not(p:nth-child(2)) a{
+    color: black;
+}
+footer a:active{
+    color: red;
+}
+/*FOTOS PAGES SECTIONS*/
+main#fotos section{
+    width: auto;
+    text-align: center;
+    background-image:linear-gradient(#F5DCDC,	#BEBEF4);
+    border-radius: 10px;
+    padding: 10px;
+}
+main#fotos section ul li{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+main#fotos section ul li img{
+    width: 100%;
+}
+main#fotos section ul li:hover{
+    transform: rotate(3deg) scale(1.2);
+    transition: all 0.5s ease-out;
+}
+main#fotos section ul li:hover figcaption{
+    transform: rotate(-3deg);
+}
+main#fotos section ul li figcaption{
+    background-color: #dda9a9; 
+}
+/*Multimedia configuration stylesHeet*/
+main#media div{
+    background-image: url(../_imagens/radio-tv.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    position: relative;
+
+
+}
+main#media div video{
+    position: fixed;
+    display: block;
+    width: 54%;
+    top: 13%;
+    left: 10%;
+}
+main#media div audio{
+    display: block;
+    position: fixed;
+    bottom: 120px;
+    right: 12px;
+    width: 160px;
+    height: 30px;
+}
+
+/*Media queries for index page*/
+/*Media queries*/
+@media only screen and (min-width:576px){
+            .container{
+                width: 525px;
+                margin: auto; 
+                padding: 0 15px; 
+                padding-bottom: 10px;
+            }
+            body{
+                background-color:#b36d6d2c;     
+            }      
+            #cabecalho,main>.container, footer{
+                background-color: white;
+                
+            }
+            
+}
+
+@media only screen and (min-width:	768px)	{
+    .container{
+        width: 690px;   
+    }
+    article figure img{
+        max-width:600px;
+        display: block;
+        margin: auto;
+    }
+    article div video{
+        max-width:579px;
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    aside div video{
+        max-width:400px;
+        display: block;
+        margin: auto;
+    }
+    header#cabecalho{
+        background-position: left bottom;
+        background-size: 200px 49px;
+        padding-bottom: 75px;
+    }
+    nav~div>img{
+        top:40px
+    }
+    header#cabecalho nav{
+        display: block;
+        top: 0px;
+        background-color: #b36d6d60;        
+        box-shadow: -1px 0px 5px black;
+        height: inherit;
+    }
+    header nav ul li{
+        display: inline-block;
+        
+    }
+    header nav ul li a{
+        color: black;
+    }
+    header nav ul li a:hover{
+        color: rgb(88, 87, 87);
+    }
+    header nav ul li:first-child{
+        padding-left: 20px;
+    }
+    nav ul li:not(nav ul li:last-child){
+        border-bottom: none;
+        border-right: 1px solid #b36d6d60;
+    }
+    header nav ul li:hover{
+        background-color: #b36d6d60;
+    }
+    /*disable Menu Buttom*/
+    .divMenuButtom{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:992px){   
+            .container{
+                width: 930px;
+                padding-bottom:0; 
+                overflow: hidden; 
+            }
+
+            .lateralContent{
+                width: 60%;
+                float: left;
+                border-right:1px solid black;
+                padding-right: 15px;
+                
+            }
+            aside{
+                width: 34%;
+                float: right;
+                margin-right: auto;
+            }
+            footer{
+                clear: both;
+            }
+}
+@media only screen and (min-width:1200px) {
+        .container{
+            width: 1110px;
+        }
+}

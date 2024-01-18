@@ -1,0 +1,193 @@
+@charset 'UTF-8';
+label{
+    display: inline-block;
+    text-indent: -999px;
+}
+.cores label::after{
+    position: absolute;
+    top: 10px;
+    content:' ';
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 6px	solid	rgba(0,0,0,0);
+    transition: 1s;
+    cursor: pointer;
+}
+label[for='verde']::after{
+    background-color: green;
+}
+label[for='rosa']::after{
+        background-color: pink;
+}
+label[for='azul']::after{
+    background-color: blue;
+    
+}
+.cores input:checked+label::after{
+    border: 6px solid rgba(0, 0, 0, 0.3); 
+}
+.cores input[type='radio']{
+    display: none;
+}
+.cores input:not(:checked)+label+img{
+    display: none;
+}
+.cores label[for='verde']::after{
+    left: 0px;
+}
+.cores label[for='rosa']::after{
+    left: 60px;
+}
+.cores label[for='azul']::after{
+    left: 120px;
+}
+#out{
+        display: inline-block;
+        border: 1px solid #333;
+        width: 44px;
+        height: 44px;
+        line-height:44px;
+        border-radius: 100%;
+         text-align: center;
+}
+/*----------------------*/
+.cores{
+    position: relative;
+    padding-top:55px;
+}
+.cores img{
+    display: block;
+    max-width: 100%;
+    box-shadow: 0 -1px 3px #777;
+}
+div.produto{
+    color: #333;
+    padding: 10px;
+    line-height: 1.3;
+
+}
+div.produto h1{
+    padding-top: 15px;
+}
+div.produto>p{
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+fieldset{
+    border: none;
+    padding-bottom: 5px;
+}
+fieldset legend{
+    display: block;
+    text-transform: uppercase;
+    font: bold 0.9em/3 Arial;
+}
+button.comprar{
+    padding: 0.5em 1em;
+    background-color:#91BD3C ;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    display: block;
+    margin: 0.5em 0.2em;
+    box-shadow: 0 1px 3px #777;
+    cursor: pointer;
+}
+/*Detalhes*/
+div.detalhe h2{
+    padding: 15px 0;
+}
+div.detalhe p{
+   margin-bottom: 15px;
+}
+/*Table datas*/
+table{
+   margin: auto;
+}
+table th{
+    padding: 0.3em 1em;
+}
+table thead{
+    background-color: #999;
+}
+table td{
+    padding: 0.3em;
+}
+table tbody tr td:first-child{
+    font-style: italic;
+}
+table tbody tr:nth-child(2n){
+    background-color: #bebebe;
+}
+div.produto-back{
+    background-color:#F2F2F2 ;
+    margin-top: 1em;
+    border-top: 2px solid #777;
+}
+
+@media screen and (min-width:768px) {
+        div.produto{
+            position: relative;
+            padding-left: 40%;
+        }
+        .cores{
+            position: static;
+            padding: 0;
+        }
+        .cores label::after{
+            position: static;
+            margin-right: 10px;
+        }
+        .cores img{
+                width:38%;
+                position: absolute;
+                top: 1%;
+                left: 0;
+        }
+        .cores img:hover{
+           transform:scale(1.2);
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media only screen and (min-width:630px){
+    div.produto{
+        position: relative;
+        padding-left: 40%;
+        font-size: 1.2em;
+        
+    }
+    .cores{
+        position: static;
+        padding: 0;
+    }
+    .cores img{
+        max-width: 38%;
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        
+    }
+    .cores label::after{
+        position: static;
+        margin-right: 10px;
+    }
+}
+*/

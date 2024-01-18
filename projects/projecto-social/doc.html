@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        div{
+            background-color: yellow;
+            border: 1px solid black;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        textarea::-webkit-scrollbar{
+                width: 0;
+                height: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Sexo</legend>
+                <p>
+                    <label for="">Masculino</label><input type="radio" name="n" id="" checked>
+                    <label for="">Femenino</label><input type="radio" name="n" id="">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Favorite Sport</legend>
+                <p>
+                    <input type="checkbox" name="f" id="if"><label for="if">Football</label> <br>
+                    <input type="checkbox" name="a" id="fa"><label for="fa">Andeball</label> <br>
+                    <input type="checkbox" name="b" id="ib"><label for="ib">Basktball</label> <br>
+                    <input type="checkbox" name="g" id="ig"><label for="ig">Golf</label> <br>
+                    in
+                </p>
+            </fieldset>
+        </form>
+
+        <form action="">
+                <label for="ipp">Pais:</label>
+                <select name="ip" id="ipp">
+                    <option value="Ao">Angola</option>
+                    <option value="Br">Brasil</option>
+                    <option value="EUA">
+                </select>
+
+        </form>
+        <form action="">
+            <label for="cd">Cidade</label>
+            <input type="text" name="" id="" list="is">
+            <datalist id="is">
+                <option value="sz">Sambizanga</option>
+                <option value="cz">Cazenga</option>
+                <option value="Ml">Malueca</option>
+            </datalist>
+                <br>
+            <p>
+                <label for="sms">Mensagem</label>
+                <textarea name="" id="" cols="30" rows="10">
+                
+                </textarea>
+            </p>
+            <p>
+                <label for="i">Nivel</label>
+                <input type="range" name="e" id="i" oninput="out.innerHTML=Number(i.value)">
+                
+            </p>
+            <p>
+                <label for="MOtsra nivel">Tela</label>
+                <output  value="i.value" name="" id="out">
+                
+                </output>
+            </p>
+
+        </form>
+        
+    </main>
+    
+</body>
+</html>
