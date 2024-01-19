@@ -9,9 +9,6 @@
         border-bottom-color: red;
         border-top-color: rgb(174,0,255) ;
     }
-    div.box a{
-        display: none;
-    }
     form label{
         font-size: 1.3em;
     }
